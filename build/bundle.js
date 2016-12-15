@@ -26434,6 +26434,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactDom = __webpack_require__(32);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26479,7 +26483,7 @@
 	    key: 'handleClick',
 	    value: function handleClick() {
 	      console.log(this.refs.tips);
-	      var tip = _react2.default.findDOMNode(this.refs.tips);
+	      var tip = _reactDom2.default.findDOMNode(this.refs.tips);
 	      if (tip.style.display === "none") {
 	        tip.style.display = "inline";
 	      } else {

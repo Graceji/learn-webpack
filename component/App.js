@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 export default class App extends Component {
   constructor(props, context) {
@@ -27,7 +28,7 @@ export default class App extends Component {
 
   handleClick() {
     console.log(this.refs.tips);
-    const tip = React.findDOMNode(this.refs.tips);
+    const tip = ReactDOM.findDOMNode(this.refs.tips);
     if (tip.style.display === "none") {
       tip.style.display = "inline";
     } else {
